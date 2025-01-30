@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Homepage</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle {
+    font-size: 19px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.content {
+    position: relative;
+    width: 400px; 
+    height: 400px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.languages {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.lang.top-left {
+    top: 15%;
+    left: 12%;
+}
+
+.lang.top-right {
+    top: 15%;
+    right: 12%;
+}
+
+.lang.middle-left {
+    top: 35%;
+    left: -5%;
+}
+
+.lang.middle-right {
+    top: 35%;
+    right: -5%;
+}
+
+.lang.bottom-left {
+    bottom: 35%;
+    left: 0%;
+}
+
+.lang.bottom-right {
+    bottom: 35%;
+    right: 0%;
+}
+
+.lang.lower-middle-left {
+    bottom: 20%;
+    left: 10%;
+}
+
+.lang.lower-middle-right {
+    bottom: 20%;
+    right: 10%;
+}
+
+.lang.bottom-center {
+    bottom: 9%;
+    left: 35%;
+}
+
+.lang {
+    position: absolute;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3366cc;
+    text-align: center;
+    width: 130px;
+}
+
+.lang span {
+    display: block;
+    font-size: smaller;
+    color: #54595D;
+    line-height: 1.6;
+}
+
+/* Search Bar */
+.search-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input {
+    margin-top: 30px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-box button {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #3366cc;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.footer-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #3366cc;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo1">
+            <img src="wikipedia.png" alt="Wikipedia Logo-1" class="logo">
+        </div>
+        <p class="subtitle">The Free Encyclopedia</p>
+
+        <div class="content">
+            <div class="languages">
+                <div class="lang top-left">English <br /> <span>6,942,000+ articles</span></div>
+                <div class="lang top-right">中文 <br /> <span>1,459,000+ 条目 / 條</span></div>
+                <div class="lang middle-left">Русский <br /> <span>2,020,000+ статей</span></div>
+                <div class="lang middle-right">日本語 <br /> <span>1,445,000+ 記事</span></div>
+                <div class="lang bottom-left">Español <br /> <span>2,003,000+ artículos</span></div>
+                <div class="lang bottom-right">Deutsch <br /> <span>2,979,000+ Artikel</span></div>
+                <div class="lang lower-middle-left">Italiano <br /> <span>1,900,000+ voci</span></div>
+                <div class="lang lower-middle-right">Français <br /> <span>2,659,000+ articles</span></div>
+                <div class="lang bottom-center">فارسی <br /> <span>+1,360,000 مقاله</span></div>
+                
+            </div>
+
+            <div class="logo-container">
+                <img src="https://th.bing.com/th/id/OIP.NtIK9w2DtE4YCHomZDXYjwHaGw?w=202&h=184&c=7&r=0&o=5&dpr=2&pid=1.7" alt="Wikipedia Logo" class="logo">
+            </div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search Wikipedia...">
+            <button>🔍</button>
+        </div>
+
+        <a href="#" class="footer-link">📖 Read Wikipedia in your language</a>
+    </div>
+</body>
+</html>
