@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News</title>
+  
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(45deg, #8db0d5, #00c6ff);
+            color: #333333;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+        }
+        .home-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .home-icon img {
+            width: 40px;
+            height: 40px;
+        }
+        .news-card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        .news-card h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .news-card p {
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="home-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmmO7Z5y-L4RuYKFxH0b6qFPA1BvnUA6Z_t4bBkpzWh_8mpD34Z-0Qo21dJ0jQpHhmJQU&usqp=CAU" alt="Home">
+        </a>
+        Latest News
+    </div>
+    <div class="container">
+        <div class="news-card">
+            <h2>News Nine</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uBsBz6YM5sI?si=_IYJokRaZeZAMNeD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="news-card">
+            <h2>Technology Update</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xeyRDJ15a_E?si=9pykw1w5lN2OxCiL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="news-card">
+            <h2>Sports Highlights</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MZ-uj3xzYwQ?si=18D67fjSvHhNxENQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
